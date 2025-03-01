@@ -1,0 +1,19 @@
+--- updated_students.c	2025-02-26 17:46:26.479674942 +0300
++++ updated_students_2.c	2025-02-26 17:47:41.741315435 +0300
+@@ -19,13 +19,13 @@
+     }
+     printf("Student with ID %d not found.\n", id);
+ }
+-void findAverageGrade(struct Student students[], count) {
++void findAverageGrade(struct Student students[],int  f_count) {
+ 	float sum;
+ 	float res;
+-	for (int i = 0; i < count; i++) {
++	for (int i = 0; i < f_count; i++) {
+ 		sum += students[i].grade;
+ 	}
+-	res = sum/(float)count;
++	res = sum/(float)f_count;
+ 	printf("Average grade in class: %.2f\n", res);
+ 	return;
+ }
